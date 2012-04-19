@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CodeMirror: PICA+ mode</title>
+    <link rel="stylesheet" href="../../lib/codemirror.css">
+    <script src="../../lib/codemirror.js"></script>
+    <script src="picaplus.js"></script>
+    <link rel="stylesheet" href="../../doc/docs.css">
+    <link rel="stylesheet" href="../../theme/eclipse.css">
+    <style type="text/css">
+      .CodeMirror {
+        border: 1px solid #eee;
+      }
+    </style>   
+  </head>
+  <body>
+    <h1>CodeMirror: PICA+ mode</h1>
+<form>
+<textarea id="picaplus" name="picaplus">    
+003@ $0123456789
+021A $aThe @Example Title with $$ characters
+028C/01 $dMax$aMusterfrau$9a54321$8Musterfrau, Max
+099Z $0test$1test$Atest$Ztest
+101@ $a23$cPICA
+203@/01 $09875
+101@ $a23$cPICA
+203@/99 $056321
+123XY $ax
+</textarea>
+</form>
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("picaplus"), {});
+    </script>
+	<p>PICA+ is a field based data format used in library cataloging systems, similar to MARC21.</p>
+    <p><strong>MIME types defined:</strong> <code>text/x-picaplus</code>.</p>
+  </body>
+</html>
